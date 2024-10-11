@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-y"></i>
+                    <div class="logo-text">YudhaChen</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="MY Portfolio.pdf">Portfolio</a></li>
+                        <li><a href="https://wa.me/+6285369874448">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="main_photo.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Yudhachen</h1>
+                    <p> I am a highly motivated individual who believes 
+                        that perseverance is the key to success. 
+                        I approach challenges with determination, never giving up until the task is completed 
+                        to the best of my abilities. Even when faced with obstacles, 
+                        I remain focused on finding solutions and continuously improving myself. 
+                        My ability to adapt and push through difficult situations has helped me achieve success 
+                        in both individual and team settings. I am confident that my resilience and commitment 
+                        to excellence will be valuable in any role I take on
+                    </p>
+
+                    <div class="btn-group">
+                    <a href="CV 3.pdf" class="btn active">Download CV</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yudhachen09@gmail.com&su=Job Inquiry&body=Hello YudhaChen," class="btn" target="_blank">Hire Me</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://wa.me/+6285369874448"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/yudha-chenn-98b7b1297/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/yudha_chenn/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/YudChenn"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@yudhachenn0901"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:90,
+            loop:true
+        })
+    </script>
+</body>
+</html>
